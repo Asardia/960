@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome To Swt Store Jailbreak Ps4 9.60</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #063FAB, #01258A);
+      background-image: url('icon0.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #49e70afa;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    @font-face {
+      font-family: 'logging';
+      src: url('fonts/LiberationMono-Regular.ttf');
+    }
+
+    .card {
+      
+      background: ;
+      backdrop-filter:;
+      padding:;
+      border-radius: 20px;
+      text-align: center;
+      width:100%;
+      max-width: 1400px;
+      box-shadow: 0 0 20px oklab(0.85 -0.25 0.2);
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+      right: 30px;
+     
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    #console {
+      font-family: 'logging', monospace;
+      font-size: 18px;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      white-space: pre-wrap;
+      height: 100px;
+      overflow-y: auto;
+    }
+
+    #clock {
+      float: right;
+      margin-right: 2.25%;
+      margin-top: 18px;
+      font-weight: bold;
+      font-size: 28px;
+      color: white;
+    }
+
+    #date {
+      float: left;
+      margin-left: 1.25%;
+      margin-top: 18px;
+      font-weight: bold;
+      font-size: 28px;
+      color: white;
+    }
+  </style>
+
+  <script>
+    function showdate() {
+        var dt = new Date();
+        var Hour = dt.getHours();
+        var Minute = dt.getMinutes();
+        var Day = dt.getDate();
+        var Month = dt.getMonth() + 1;
+        var Year = dt.getFullYear();
+
+        if (Minute < 10) { Minute = "0" + Minute; };
+        if (Hour < 10) { Hour = "0" + Hour; };
+
+        document.getElementById("date").innerHTML = (Day + "/" + Month + "/" + Year);
+        document.getElementById("clock").innerHTML = (Hour + ":" + Minute);
+    }
+
+    setInterval(showdate, 1000);
+  </script>
+</head>
+
+<body>
+  <span id="date"></span>
+  <span id="clock"></span>
+
+  <div class="card">
+    <h1>Swt Store Jailbreak for PS4 Firmware 9.60 No Usb Needed</h1>
+    <pre id="console"></pre>
+  </div>
+
+  <script src="payload.js"></script>
+  <script type="module" src="./alert.mjs"></script>
+</body>
+</html>
